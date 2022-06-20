@@ -7,12 +7,15 @@
 Neste mesmo módulo.
 As informações das questões cadastrados são salvas no banco de dados MySQL;
 
-2.	Um sistema de login com sessão e Mysql. 
+2.	Um módulo de login com sessão e Mysql. 
+
+Neste mesmo módulo.
+As informações do login são consultada no banco de dados MySQL;
 
 ## Configuração do Projeto:
 
-- Executar a query pilotomaster.sql que se encontra na pasta Bd ou importar o arquivo no phpMyAdmin para criar a table necessária.
-- 
+- Executar a query pilotomaster.sql que se encontra na pasta Bd ou importar o arquivo no phpMyAdmin para criar aa tables necessárias.
+
 ```
 - Editar o arquivo **src/Funcoes.php** 
  $this->mysql = new mysqli("nomeDoDominioOuIP:Porta", "usuarioDoMysql", "", "dbname");
