@@ -1,7 +1,7 @@
 <?php
 session_start();
 ob_start();
-include_once 'src/conexao.php';
+include_once '../src/conexao.php';
 
 if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
     $_SESSION['msg'] = "<p style='color: #ff0000'>Erro: Necessário realizar o login para acessar a página!</p>";
@@ -56,7 +56,7 @@ $questoes = $questao->exibirQuestao();
         </p>
         <?php endforeach; ?>
         <br>
-        <a type='button' class='botao' value='Voltar' href='../index.php' >VOLTAR</a>
+        <a type='button' class='botao' value='Voltar' href='../adm.php' >VOLTAR</a>
     </div>
 </body>
 </html>

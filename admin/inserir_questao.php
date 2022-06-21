@@ -1,7 +1,7 @@
 <?php
 session_start();
 ob_start();
-include_once 'src/conexao.php';
+include_once '../src/conexao.php';
 
 if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
     $_SESSION['msg'] = "<p style='color: #ff0000'>Erro: Necessário realizar o login para acessar a página!</p>";
@@ -9,6 +9,7 @@ if((!isset($_SESSION['id'])) AND (!isset($_SESSION['nome']))){
 }
 ?>
 <?php 
+
 require '../src/Funcoes.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -57,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <br><br>
         <button class="botao">Cadastrar</button>
         <br><br>
-        <a type='button' class="botao" value='Voltar' href='../index.php' >VOLTAR</a>
+        <a type='button' class="botao" value='Voltar' href='../adm.php' >VOLTAR</a>
     </form>
 </div>
 </body>
