@@ -50,8 +50,7 @@ include_once 'src/conexao.php';
         unset($_SESSION['msg']);
     }
     ?>
-
-   
+    
         <h1>Login</h1>
         <label>Usuário</label>
         <input type="text" name="usuario" placeholder="Digite o usuário" value="<?php if(isset($dados['usuario'])){ echo $dados['usuario']; } ?>"><br><br>
